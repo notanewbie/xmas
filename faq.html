@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="yebye.css" />
+<html>
+<head>
+<title>faq</title>
+</head>
+<body id="hidden">
+<br />
+<a href="index.html">Wishlist</a><br />
+<a href="info.html">Info</a><br />
+<a href="faq.html">FAQ</a><br />
+<a href="contact.html">Contact</a><br />
+<br />
+<img src="santa0.gif" />
+<br /><br /><br />
+Q: How do I pick something to buy?<br />
+A: There are two key things to keep in mind: firstly, and most importantly, your budget. Secondly, the quality of the product. If you're bying something used from the internet, for example, make sure you read the description and make sure that it's in working condition (turns on, holds a charge, has all discs, etc.)<br />
+<br />
+Q: How many things should I buy?<br />
+A: Only buy me one or two things from this list. If you can think of anything else outside of the list that you would also buy me, feel free to buy that too.<br />
+<br />
+Q: Should I coordinate with my siblings to make sure we don't buy the same gift?<br />
+A: Yes.
+</body>
+<script type="text/javascript">
+a = 0;
+if(location.search == "?dev=1") {
+  a = 1;
+  document.getElementsByTagName("img")[0].src="santa" + new Date().getHours() % 10 + ".gif";
+  document.getElementById("hidden").id = "";
+}
+else {
+  location.href="404.html" + location.search;
+}
+b = 0;
+while(document.getElementsByTagName("a")[b].href) {
+document.getElementsByTagName("a")[b].href = document.getElementsByTagName("a")[b].href + location.search;
+b = b + 1;
+}
+</script>

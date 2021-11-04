@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="yebye.css" />
+<html>
+<head>
+<title>404</title>
+</head>
+<body id="hidden">
+<br />
+<a href="info.html">Info</a><br />
+<a href="faq.html">FAQ</a><br />
+<a href="contact.html">Contact</a><br />
+<br />
+<img src="santa0.gif" id="bigly" />
+</body>
+<script type="text/javascript">
+a = 0;
+if(location.search == "?dev=1") {
+  a = 1;
+  document.getElementsByTagName("img")[0].src="santa" + new Date().getHours() % 10 + ".gif";
+  document.getElementById("hidden").id = "";
+}
+else {
+  location.href="https://kanyewest.com";
+}
+b = 0;
+while(document.getElementsByTagName("a")[b].href) {
+document.getElementsByTagName("a")[b].href = document.getElementsByTagName("a")[b].href + location.search;
+b = b + 1;
+}
+</script>
