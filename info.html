@@ -15,6 +15,8 @@
 This is a basic, easy-to-use website intended to share my Christmas gift wish-list wish family and friends.
 </body>
 <script type="text/javascript">
+    document.getElementsByTagName("img")[0].src="santa" + new Date().getHours() % 10 + ".gif";
+document.getElementById("hidden").id = "";
 a = 0;
 if(location.search == "?dev=1") {
   a = 1;
@@ -26,6 +28,4 @@ while(document.getElementsByTagName("a")[b].href) {
 document.getElementsByTagName("a")[b].href = document.getElementsByTagName("a")[b].href + location.search;
 b = b + 1;
 }
-  document.getElementsByTagName("img")[0].src="santa" + new Date().getHours() % 10 + ".gif";
-document.getElementById("hidden").id = "";
 </script>
