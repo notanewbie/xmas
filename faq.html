@@ -28,12 +28,11 @@ if(location.search == "?dev=1") {
   document.getElementsByTagName("img")[0].src="santa" + new Date().getHours() % 10 + ".gif";
   document.getElementById("hidden").id = "";
 }
-else {
-  location.href="404.html" + location.search;
-}
 b = 0;
 while(document.getElementsByTagName("a")[b].href) {
 document.getElementsByTagName("a")[b].href = document.getElementsByTagName("a")[b].href + location.search;
 b = b + 1;
 }
+  document.getElementsByTagName("img")[0].src="santa" + new Date().getHours() % 10 + ".gif";
+document.getElementById("hidden").id = "";
 </script>
